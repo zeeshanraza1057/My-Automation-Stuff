@@ -1,0 +1,32 @@
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons hover */
+button, a {
+  transition: all 0.3s ease;
+}
+
+/* Form input fields */
+input, textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  width: 100%;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+}
+
+/* Footer */
+footer {
+  background-color: #1f2937;
+  color: #d1d5db;
+  padding: 3rem 1rem;
+  text-align: center;
+}

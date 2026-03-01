@@ -1,0 +1,226 @@
+/* Testimonials.module.scss */
+
+.testimonialsSection {
+  // background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  background: linear-gradient(135deg, #064e3b 0%, #022c22 100%);
+  padding: 4rem 1rem;
+  position: relative;
+  overflow: hidden;
+
+  @media (min-width: 768px) {
+    padding: 5rem 1.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 6rem 2rem;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(16, 185, 129, 0.15) 0%, transparent 55%),
+      radial-gradient(circle at 80% 80%, rgba(34, 197, 94, 0.12) 0%, transparent 55%);
+    pointer-events: none;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    margin-bottom: 4rem;
+  }
+}
+
+.mainTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  // color: #ffffff;
+  color: #ecfdf5;
+  margin-bottom: 1rem;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 3rem;
+  }
+}
+
+.subtitle {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #a7f3d0;
+  // color: #cbd5e0;
+  max-width: 700px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
+}
+
+.testimonialsWrapper {
+  position: relative;
+}
+
+.testimonialsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+.testimonialCard {
+  background: rgba(16, 185, 129, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-8px);
+    background: rgba(16, 185, 129, 0.14);
+    border-color: rgba(16, 185, 129, 0.45);
+    box-shadow: 0 20px 40px rgba(6, 95, 70, 0.45);
+  }
+
+  &::before {
+    content: '"';
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    font-size: 4rem;
+    font-family: Georgia, serif;
+    color: rgba(236, 253, 245, 0.12);
+    line-height: 1;
+  }
+
+  @media (min-width: 768px) {
+    padding: 2.5rem;
+  }
+}
+
+.cardContent {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonialText {
+  font-size: 0.9375rem;
+  line-height: 1.7;
+  color: #ecfdf5;
+  margin-bottom: 2rem;
+  // position: relative;
+  padding-left: 0.5rem;
+
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.authorInfo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(167, 243, 208, 0.35);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, #059669, #047857);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.authorDetails {
+  flex: 1;
+}
+
+.authorName {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ecfdf5;
+  margin-bottom: 0.25rem;
+
+  @media (min-width: 768px) {
+    font-size: 1.0625rem;
+  }
+}
+
+.authorPosition {
+  font-size: 0.875rem;
+  // color: #a0aec0;
+  // line-height: 1.4;
+    color: #a7f3d0;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navButton {
+  width: 56px;
+  height: 56px;
+  background: rgba(16, 185, 129, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: #ecfdf5;
+  &:hover {
+    background: rgba(16, 185, 129, 0.3);
+    border-color: rgba(16, 185, 129, 0.55);
+    transform: scale(1.08);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
