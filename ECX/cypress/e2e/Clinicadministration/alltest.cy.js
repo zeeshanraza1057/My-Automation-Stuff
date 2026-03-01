@@ -1,0 +1,11 @@
+// Import each test spec file
+import './Addnewappointment.cy.js'
+import './addnewpatient.cy.js'
+import './Patient_listing.cy.js'
+import './Appointment_Types.cy.js'
+import './adddoctors.cy.js'
+import './Doctor_listing.cy.js'
+import './addstaff.cy.js'
+import './Staff_listing.cy.js'
+import './add user.cy.js'
+import './user_listing.cy.js'
