@@ -1,0 +1,62 @@
+@import "../../styles/variables.scss";
+
+.section {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+
+  img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+}
+
+.content {
+  h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 12px;
+  }
+
+  span {
+    font-size: 13px;
+    color: #2e7d32;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

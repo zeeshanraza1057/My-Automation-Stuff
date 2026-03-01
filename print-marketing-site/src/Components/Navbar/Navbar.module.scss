@@ -1,0 +1,100 @@
+@import "../../styles/variables.scss";
+
+.header {
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+/* Top black bar */
+.topBar {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 13px;
+  padding: 6px 0;
+}
+
+/* Main navbar */
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1b5e20;
+
+  span {
+    color: #2e7d32;
+  }
+}
+
+/* Search box */
+.searchBox {
+  flex: 1;
+  max-width: 420px;
+  margin: 0 24px;
+  background: #f2f2f2;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+
+  input {
+    border: none;
+    outline: none;
+    background: transparent;
+    flex: 1;
+    font-size: 14px;
+  }
+
+  svg {
+    color: #666;
+  }
+}
+
+/* Right actions */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: #222;
+  cursor: pointer;
+}
+
+.cart {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Menu */
+.menu {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px 16px;
+  display: flex;
+  gap: 24px;
+
+  a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #222;
+
+    &:hover {
+      color: #2e7d32;
+    }
+  }
+}
